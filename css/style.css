@@ -45,73 +45,27 @@ p{line-height: 1.5;}
 
 /* Custom Project CSS; */
 
-.page-wrapper{
-    width: 1200px;
-    margin: 1em auto;
+/* Define Variables for the Root Element */
+:root{
+    --main-bg-color:#f4f4f4;
+    --main-txt-color:#333;
+    --container-width: 90%;
+    --header-bg-color:#333;
+    --header-txt-color:#fff;
 }
-section{
-    width: 60%;
-    margin: 25px auto;
-    padding: 0 0 0.5em 0;
-    border: 1px solid #efefef;
-    border-radius: 5px;
-    box-shadow: 7px 7px 11px -3px rgba(149,149,134,0.5);
-}
-.article-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-article{
-    width: 45%;
-    margin:3%;
-    /* background: #fef; */
-}
-img{
-    width: 280px;
-    max-width: 80%;
-    max-height: 280px;
-    width: 100%;
-    padding-left: 30px;
 
-
+body{
+    backgorund: var(--main-bg-color);
+    color: var(--main-txt-color);
 }
-h1{
-    background-color: #efefef;
-    text-align: center;
+.container{
+    width: var(--container-width);
+    margin:20px auto;
 }
-h1,h2{
+header#main-header{
+    background: var(--header-bg-color);
+    color: var(--header-txt-color);
+}
+header#main-header h1{
     padding: 0.5em;
-}
-
-.teaser h2{
-    text-align: center;
-    padding:1em;
-}
-.teaser-sub-heading{
-    position: relative;
-}
-/*
-.teaser-sub-heading:before{
-    content: "";
-    height: 25px;;
-    top: 34px;
-    left: 15px;
-    background: #efefef;
-    position: absolute;
-    border: 1px solid #efefef;
-}
-*/
-.teaser-sub-heading:after{
-    content: "";
-    width: 50%;
-    bottom: 15px;
-    right: 30px;
-    border: 1px solid #efefef;
-    position: absolute;
-}
-p{
-    padding: 1em;
-    text-align: justify;
-
 }
