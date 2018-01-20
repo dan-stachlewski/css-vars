@@ -46,6 +46,7 @@ p{line-height: 1.5;}
 /* Custom Project CSS; */
 
 /* Define Variables for the Root Element */
+/* Tutorial Ref: https://www.youtube.com/watch?v=sQUB039MG0I&t=298s */
 :root{
     --main-bg-color:#f4f4f4;
     --main-txt-color:#333;
